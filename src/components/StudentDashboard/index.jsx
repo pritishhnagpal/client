@@ -19,7 +19,10 @@ export default function StudentDashboard({ socket, channels, setChannels }) {
   }
 
   useEffect(() => {
-    socket.on("new-channels", (channels) => setChannels(channels));
+    socket.on("new-channels", (channels) => {
+      console.log("channelsss", channels);
+      setChannels(channels);
+    });
   }, []);
 
   return (
