@@ -9,7 +9,7 @@ import QuestionWindow from "./components/QuestionWindow";
 import SignUp from "./components/Signup";
 import Login from "./components/Login";
 
-const socket = io("http://localhost:8010");
+const socket = io("https://poll-service-wc5d.onrender.com/");
 
 function App() {
   const [channels, setChannels] = useState([]);
